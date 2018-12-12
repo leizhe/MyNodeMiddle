@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{block 'title'}}{{title}}{{/block}}</title>
+    <link rel="favicon" href="/images/favicon.png">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/javascripts/html5shiv.js"></script>
+    <script src="/javascripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<%
+include ('./header.html')
+%>
+{{block 'content'}}{{/block}}
+<%
+include('./footer.html')
+%>
+{{block 'script'}}{{/block}}
+
+</body>
+</html>

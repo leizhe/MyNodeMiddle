@@ -1,0 +1,21 @@
+
+    {{extend './Shared/layout.html'}}
+
+    {{block 'title'}}{{title}}{{/block}}
+    
+    {{block 'script'}}
+    <span>script</span>
+    {{/block}}
+    
+    {{block 'content'}}
+   
+    <div>
+        <h2>{{title}}</h2>
+        <ul>
+            {{each list}}
+            <li>编号：{{$value.id}} &nbsp;&nbsp;姓名：{{$value.name}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/block}}
+    
